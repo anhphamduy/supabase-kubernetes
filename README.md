@@ -8,7 +8,9 @@ You can find the documentation inside the [chart directory](./charts/supabase/RE
 - Dial into the pod with supabase_admin user `psql -U supabase_admin`. Then give admin perms to postgres user `ALTER ROLE postgres WITH SUPERUSER;`
 
 # Azure secrets to be added to auth
+```shell
 GOTRUE_EXTERNAL_AZURE_ENABLED=true
 GOTRUE_EXTERNAL_GITHUB_CLIENT_ID=myappclientid
 GOTRUE_EXTERNAL_GITHUB_SECRET=clientsecretvaluessssh
 GOTRUE_EXTERNAL_GITHUB_REDIRECT_URI=http://localhost:3000
+```
