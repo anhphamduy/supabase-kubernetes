@@ -8,7 +8,7 @@ secret:
     password: example123456
   dashboard:
     username: supabase
-    password: this_password_is_insecure_and_should_be_updated
+    password: supabase
   db:
     username: postgres
     password: example123456
@@ -36,7 +36,7 @@ studio:
   environment:
     STUDIO_DEFAULT_ORGANIZATION: "My Organization"
     STUDIO_DEFAULT_PROJECT: "My Project"
-    SUPABASE_PUBLIC_URL: http://example.com/
+    SUPABASE_PUBLIC_URL: http://localhost/
     NEXT_PUBLIC_ENABLE_LOGS: "true"
   livenessProbe:
     httpGet:
@@ -46,10 +46,10 @@ studio:
 
 auth:
   image:
-    tag: v2.143.0
+    tag: v2.152.0
   environment:
-    API_EXTERNAL_URL: http://example.com
-    GOTRUE_SITE_URL: http://example.com
+    API_EXTERNAL_URL: http://localhost
+    GOTRUE_SITE_URL: http://localhost
     GOTRUE_EXTERNAL_EMAIL_ENABLED: "true"
     GOTRUE_MAILER_AUTOCONFIRM: "true"
     GOTRUE_SMTP_ADMIN_EMAIL: "your-mail@example.com"
@@ -83,7 +83,7 @@ storage:
       port: 5000
     initialDelaySeconds: 3
   persistence:
-    enabled: false
+    enabled: true
 
 imgproxy:
   image:
@@ -97,7 +97,7 @@ imgproxy:
         - health
     initialDelaySeconds: 3
   persistence:
-    enabled: false
+    enabled: true
 
 kong:
   image:
@@ -116,7 +116,7 @@ kong:
       #   hosts:
       #     - example.com
     hosts:
-      - host: example.com
+      - host: localhost
         paths:
           - path: /
             pathType: Prefix

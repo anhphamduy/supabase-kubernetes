@@ -11,7 +11,8 @@ You can find the documentation inside the [chart directory](./charts/supabase/RE
 # Azure secrets to be added to auth
 ```shell
 GOTRUE_EXTERNAL_AZURE_ENABLED=true
-GOTRUE_EXTERNAL_GITHUB_CLIENT_ID=myappclientid
-GOTRUE_EXTERNAL_GITHUB_SECRET=clientsecretvaluessssh
-GOTRUE_EXTERNAL_GITHUB_REDIRECT_URI=http://localhost:3000
+GOTRUE_EXTERNAL_AZURE_CLIENT_ID=myappclientid
+GOTRUE_EXTERNAL_AZURE_CLIENT_ID=tenantid
+GOTRUE_EXTERNAL_AZURE_SECRET=clientsecretvaluessssh
+GOTRUE_EXTERNAL_AZURE_REDIRECT_URI=http://localhost:3000
 ```
