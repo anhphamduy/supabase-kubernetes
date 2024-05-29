@@ -11,4 +11,4 @@ You can find the documentation inside the [chart directory](./charts/supabase/RE
 GOTRUE_EXTERNAL_AZURE_ENABLED=true
 GOTRUE_EXTERNAL_GITHUB_CLIENT_ID=myappclientid
 GOTRUE_EXTERNAL_GITHUB_SECRET=clientsecretvaluessssh
-GOTRUE_EXTERNAL_GITHUB_REDIRECT_URI=http://localhost:3000/callback
+GOTRUE_EXTERNAL_GITHUB_REDIRECT_URI=http://localhost:3000
